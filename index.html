@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="html">
+        <div id="error" class="error-hidden">
+            <p><i class="fas fa-times-circle"></i> You need to fill out fields</p>
+        </div>
+        <footer class="footer">
+            <p>© 2020 FloritDev, Mario Andres ML - Todos los Derechos Reservados</p>
+        </footer>
+    </div>
+    <div class="container">
+        <div>
+            <h1>Simple calculator</h1>
+        </div>
+        <div class="top">
+            <input id="result" type="number" disabled >
+        </div>
+        <div class="medium">
+            <input id="numberone" class="number" type="number" placeholder="0">
+            <input id="numbertwo" class="number" type="number" placeholder="0">
+        </div>
+        <div class="operation">
+            <button onclick="error();" id="sum" class="btn operation-buttom" type="submit">+</button>
+            <button onclick="error();" id="rest" class="btn operation-buttom" type="submit">-</button>
+            <button onclick="error();" id="multiplication" class="btn operation-buttom" type="submit">*</button>
+            <button onclick="error();" id="division" class="btn operation-buttom" type="submit">÷</button>
+        </div>
+        <button id="clear" class="btn" type="submit">C</button>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

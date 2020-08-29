@@ -1,0 +1,144 @@
+body 
+    background-image: url('../src/images/bg1.jpg')
+    font-family: 'Saira', Arial, Helvetica, sans-serif
+    position: relative
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button 
+  -webkit-appearance: none
+  margin: 0
+
+.html
+    background-color: rgba(#ccc, .9)
+    width: 100%
+    height: 100vh
+    position: absolute
+    z-index: -1
+    .footer 
+        position: absolute
+        bottom: 5px
+        left: 50%
+        transform: translateX(-50%)
+        color: #3E6680
+        font-weight: 500
+
+    .error-hidden
+        top: -50px
+        position: relative
+        width: 500px
+        background-color: #B6244F
+        margin: auto
+        text-align: center
+        padding: 10px
+        border-radius: 3px
+        color: #fff
+        transition: .3s
+    .error
+        position: relative
+        top: 20px
+        width: 500px
+        background-color: #B6244F
+        margin: auto
+        text-align: center
+        padding: 10px
+        border-radius: 3px
+        color: #fff
+        transition: .3s
+
+
+.container 
+    position: absolute
+    margin-top: 130px
+    left: 50%
+    transform: translateX(-50%)
+    border-radius: 5px
+    background-color: #3E6680
+    width: 290px
+    padding: 15px 10px
+    // FLEX PROPERTIES 
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 4px solid rgba(#fff , .2)
+
+    h1 
+        font-size: 25px
+        color: #fff
+
+    .top
+        width: 90%
+        border-bottom: 2px solid rgba(#fff , .7)
+        padding-bottom: 20px
+        margin-bottom: 20px
+    #result 
+        padding-right: 2px
+        color: white
+        width: 100%
+        text-align: right
+        height: 30px
+        border: none
+        border-radius: 5px
+        background-color: rgba(#468AAF , .7)
+
+    .medium 
+        width: 90%
+
+        .number 
+            text-align: center
+            height: 35px
+            border: none
+            width: 100%
+            border-radius: 5px
+            margin-bottom: 15px
+            &:focus
+                outline: none
+
+    .operation 
+        width: 90%
+        // FLEX PROPERTIES 
+        display: flex
+        justify-content: space-between
+        margin-bottom: 10px
+
+        .btn 
+            flex-grow: 1
+            height: 50px
+            border: none
+            margin: 1px
+            border-radius: 2px
+            font-weight: 500
+            color: #ffffff
+            font-size: 30px
+            cursor: pointer
+            transition: .3s
+            &:hover
+                opacity: .8
+                transition: .3s
+
+        #sum 
+            background-color: #ABE188  
+        #rest 
+            background-color: #C1666B
+        #multiplication 
+            background-color: #F6BA65
+        #division
+            background-color: #74A4BC
+        
+    
+    .btn 
+        width: 80px
+        height: 30px
+        border: none
+        margin: 1px
+        border-radius: 2px
+        font-weight: 500
+        color: #ffffff
+        font-size: 17px
+        cursor: pointer
+        &:hover
+            opacity: .8
+            transition: .3s
+    #clear
+            background-color: #D4B483
+
+    
